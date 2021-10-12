@@ -1,6 +1,6 @@
 class DoctorsController < ApplicationController
   before_action :set_doctor, only: %i[edit update show destroy]
-  
+
   def index
     @doctors = Doctor.all.order('created_at ASC')
   end
