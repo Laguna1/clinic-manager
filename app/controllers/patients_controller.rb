@@ -8,7 +8,7 @@ class PatientsController < ApplicationController
   def show; end
 
   def new
-    @dpatient = Patient.new
+    @patient = Patient.new
   end
 
   def create
@@ -21,7 +21,7 @@ class PatientsController < ApplicationController
   end
 
   def destroy
-    @dpatient.destroy
+    @patient.destroy
     redirect_to root_path
   end
 
